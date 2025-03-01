@@ -1,4 +1,11 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+:root {
+    --orange: #E44D26;
+    --purple: #563d7c; 
+}
 
 
 .fonts {
@@ -7,4 +14,12 @@
 
 .font-title {
     font-family: "Titillium Web", "Trebuchet MS", sans-serif;
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.purple {
+    background-color: var(--purple);
 }
