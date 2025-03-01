@@ -51,47 +51,127 @@
     <div class="container m-auto">
         <div class="row">
             <div class="col me-3">
-                <h3 class="text-center text-primary font-title"> Stuff</h3>
+                <h3 class="fw-bold font-title"> Stuff</h3>
 
                 <p class="text-center text-primary fonts mt-1">
                 <h2>Hi I am Aston!</h2>
                 I am a 22-year-old computer science graduate with a minor in math and economics. Passionate about both
                 full-stack development and UX/UI design, I enjoy building seamless, user-friendly applications that not
-                only function well but also provide a great experience. Check out some of my projects on the project tab. <!--fix this sentence-->
+                only function well but also provide a great experience.
+                Check out some of my <a href="/project.html"
+                    class="fw-bold text-reset link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover">projects.</a>
+                <!--fix this sentence-->
                 Beyond coding, I am an athlete who stays active by working out and playing recreational sports. Whether
                 I am optimizing a website’s performance or perfecting a jump shot, I love a good challenge.
                 Looking to connect? Click that button down below </p>
                 <a type="button" class="btn btn-primary" href="/contact.html">Contact</a>
             </div>
             <div class="col">
-                <h2 class="text-center">Skills</h2>
-                <button type="button" class="btn btn-primary fw-bold">Javascript</button> <!--webpack npm-->
-                <button type="button" class="btn btn-success fw-bold">Python</button> <!--with modern tooling, uv, ruff, mypy-->
-                <button type="button" class="btn btn-primary fw-bold">HTML</button>
-                <button type="button" class="btn btn-danger fw-bold">CSS</button> <!--change this color to orange-->
-                <button type="button" class="btn btn-primary fw-bold">Javascript</button> <!--docker blue-->
-                <button type="button" class="btn btn-success fw-bold">Python</button> <!--github black -->
-                <button type="button" class="btn btn-primary fw-bold">HTML</button> <!--github actions black-->
-                <button type="button" class="btn btn-primary fw-bold">Javascript</button> <!--SQLite light blue, maybe cyan-->
-                <button type="button" class="btn btn-success fw-bold">Python</button> <!--Bootstrap purple-->
-                <button type="button" class="btn btn-primary fw-bold">HTML</button><!--render black-->
-                <button type="button" class="btn btn-primary fw-bold">HTML</button><!--Postgres-->
+                <div class="container">
+                    <h2>Skills</h2>
 
-                
+                    <div class="row row-cols-4 row-cols-sm-2 row-cols-md-3 me-3 ">
+                        <div class="col col-md-auto mt-3 ">
+                            <button type="button" class="btn btn-primary fw-bold">Javascript</button> <!--webpack npm-->
+
+                            <button type="button" class="btn btn-success fw-bold">Python</button>
+
+                            <!--with modern tooling, uv, ruff, mypy-->
+                            <button type="button" class="btn orange fw-bold">HTML</button>
+                            <button type="button" class="btn btn-primary fw-bold">CSS</button>
+                            <!--change this color to orange-->
+                            <button type="button" class="btn btn-primary fw-bold ">Docker</button>
+
+                            <!--github actions black-->
+                            <button type="button" class="btn btn-info fw-bold my-1  ">SQLite</button>
+                            <!--SQLite light blue, maybe cyan-->
+                            <button type="button" class="btn purple text-white fw-bold">Bootstrap</button>
+                            <!--Bootstrap purple-->
+                            <button type="button" class="btn btn-dark fw-bold">Render</button><!--render black-->
+                            <button type="button" class="btn btn-primary fw-bold my-1">Postgres</button><!--Postgres-->
+                            <!--docker blue-->
+                            <button type="button" class="btn btn-success fw-bold">Github Actions</button>
+                            <!--github black -->
+                            <button type="button" class="btn btn-primary fw-bold">Github Worflows</button>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         </div>
     </div>
     <footer class="bg-danger text-center p-3 mt-auto primary">
         <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/home.html"> Home</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/about.html"> About me</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/project.html"> Projects</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/contanct.html"> Contact </a>
+                </div>
 
-
+            </div>
+            <hr>
+            <div class="d-flex align-items-center justify-content-between">
+                <p class="mx-5">©2025. Made by <a>Aston Evans</a> </p>
+                <div class="d-flex align-items-center ms-auto me-5 ">
+                    <a href="https://github.com/aston-evans" target="_blank" class="text-reset me-3">
+                    <i class="bi bi-github fs-3"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aston-evans-241a9334b/" target="_blank" class="text-reset me-3">
+                    <i class="bi bi-linkedin fs-3"></i>
+                </a>
+                <a href="mailto:findaston@gmail.com" class="text-reset">
+                    <i class="bi bi-envelope-fill fs-3"></i>
+                </div>
+            </div>
         </div>
+        <!--one style of the footer 
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="fs-5 f">Information</p>
+                    <div class="row row-cols-1">
+                            <a href="/home.html"> Home</a>
+                            
+                            <a href="/about.html"> About me</a>
+                            
+                            <a href="/project.html"> Projects</a>
+                            <a href="/contanct.html"> Contact </a>
+
+                        
+                    </div>
+                </div>
+                <div class="col">
+                    <p>Socials</p>
+                    <div class="row">
+                        <div class="col">
+                            <a>Github</a>
+                            <a>Linkedin</a>
+                            <a>Email</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p>©2025. Made by <a>Aston Evans</a> </p>
+
+        
+
+
+        </div>--><!--
         <p class="fs-6">©2025 Aston Evans | <a target="_blank"
                 href="https://github.com/aston-evans/aston-evans">GitHub</a> |
             <a target="_blank" href="https://www.linkedin.com/in/aston-evans-241a9334b/">LinkedIn</a>
             | <a target="_blank" href="mailto:findaston@gmail.com">Email</a>
-        </p>
+        </p>-->
     </footer>
     <script src="dist/bundle.js"></script>
 </body>
