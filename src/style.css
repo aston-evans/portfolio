@@ -15,11 +15,23 @@
 .font-title {
     font-family: "Titillium Web", "Trebuchet MS", sans-serif;
 }
-
 .orange {
+    background-color: var(--orange);
+
+}
+
+.orange:hover {
     background-color: var(--orange);
 }
 
 .purple {
     background-color: var(--purple);
+}
+
+.purple:hover {
+    background-color: var(--purple);
+}
+.navbar-brand {
+    font-size: 1rem;
+    margin-right: 0;
 }
