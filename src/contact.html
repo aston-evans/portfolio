@@ -5,12 +5,12 @@
     <title> Home Page </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <link href="style.css" rel="stylesheet">
-    
+
 </head>
 
-<body class="bg-dark">
+<body class="d-flex flex-column min-vh-100">
     <script src="/script.js"></script>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="home.html">Aston Evans</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -21,18 +21,80 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/home.html">Home</a>
+                        <a class="nav-link text-black" href="/home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
+                        <a class="nav-link text-black" href="/about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/project.html">Projects</a>
+                        <a class="nav-link text-black" href="/project.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact</a>
+                        <a class="nav-link text-black" href="/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="bg-white container mt-3 d-flex-justify-content-center">
+        <h1 class="text-center">Contact</h1>
+        <hr class="border border-primary border-3 opacity-100 mx-auto" style="width: 50%">
+
+    </div>
+    
+        <!--<div class="container d-flex justify-content-center m-auto">
+        <form class="text-center border border-5 rounded-3 border-dark bg-primary" style="width: 45%" method="post"><!--add an action here for backend-->
+           <!-- <h2 class="my-2">Connect with Me!</h2>
+            <div class="text-start">
+                <label class="fw-bold ms-3 d-block mb-1" for="name" type="text">
+                    Name: 
+                </label> 
+                <label class="fw-bold ms-3 d-block mb-1" for="email" type="email" placeholder="youremail@email.com">Email</label>
+                <input class="ms-3">
+            </div>
+        
+    </form>
+    </div>-->
+    <!--testing this form out for spacing-->
+    <form class="text-center border  bord"></form>
+
+
+    <footer class="bg-info text-center p-3 mt-auto primary">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/home.html"> Home</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/about.html"> About me</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/project.html"> Projects</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/contanct.html"> Contact </a>
+                </div>
+
+            </div>
+            <hr>
+            <div class="d-flex align-items-center justify-content-between">
+                <p class="mx-5">©2025. Made by <a>Aston Evans</a> </p>
+                <div class="d-flex align-items-center ms-auto me-5 ">
+                    <a href="https://github.com/aston-evans" target="_blank" class="text-reset me-3">
+                        <i class="bi bi-github fs-3"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aston-evans-241a9334b/" target="_blank"
+                        class="text-reset me-3">
+                        <i class="bi bi-linkedin fs-3"></i>
+                    </a>
+                    <a href="mailto:findaston@gmail.com" class="text-reset">
+                        <i class="bi bi-envelope-fill fs-3"></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
