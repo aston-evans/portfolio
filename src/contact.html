@@ -57,8 +57,29 @@
     </form>
     </div>-->
     <!--testing this form out for spacing-->
-    <form class="text-center border  bord"></form>
 
+    <form class=" border border-3 m-auto border-dark bg-primary p-3" style="width: 30%;">
+        <h2 class="my-3 text-center">Contact Me!</h2>
+        <div class="form-group text-start ms-5">
+            <label class="d-block fs-5" for="name">Name: </label>
+            <input class="mb-3 " type="text" id="name" placeholder="Your Name" style="width: 90%;" required> 
+        </div>
+        <div class="form-group text-start ms-5">
+            <label class="d-block fs-5" for="email">Email:</label>
+            <input class="mb-3" type="email" id="email" style="width: 90%;" placeholder="exampleemail@email.com" required>
+        </div>
+        <div class="form-group text-start ms-5">
+            <label class="d-block fs-5" for="message">Message: 
+            </label>
+            <input class="mb-3 p-4" type="text" id="message" style="width: 90%;" >
+        </div>
+        <!--have to adjust the button spacing so it aligns with the text-area// works aligns fine w text-area being width 90 but want to see
+        if I can get it to 80 and adjust accordingly-->
+        <div class="text-end">
+        <button type="submit" class="btn btn-danger border border-1 border-dark text-end me-5 ">Submit</button>
+        </div>
+<!--want to add an animation when its submitted -->
+    </form>
 
     <footer class="bg-info text-center p-3 mt-auto primary">
         <div class="container">
