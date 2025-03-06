@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: "./src/import.js", // Entry point for your JavaScript
@@ -38,6 +39,16 @@ module.exports = {
             filename: "project.html", // Output filename in dist/
             //chunks: ["project", "shared"]
         }),
+        new HtmlWebpackPlugin({
+            template: "./src/suny.html",
+            filename: "suny.html"
+
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {from: 'img', to: 'img'}
+            ]
+        })
         
     ],
     devServer: {
