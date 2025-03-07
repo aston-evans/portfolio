@@ -1,82 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> Home Page </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    
-    <body class="bg-light d-flex flex-column min-vh-100">
-        <nav class="navbar navbar-expand-lg bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="home.html">Aston Evans</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="/home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="/about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="/project.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-black" href="/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+
+<head>
+    <title> Home Page </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Aston Evans</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="/project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!--div that says the name of a project with the link below to the render site.
+        </div>
+    </nav>
+    <!--div that says the name of a project with the link below to the render site.
          Then below that div make a part where it gives a light summary, at the bottom of that place 3 buttons, 1 that leads
          to the github, one to render, and one that brings you back to the project page.  -->
-        
-        <footer class="bg-info text-center p-3 mt-auto primary">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <a class="text-reset link-underline link-underline-opacity-0" href="/home.html"> Home</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-reset link-underline link-underline-opacity-0" href="/about.html"> About me</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-reset link-underline link-underline-opacity-0" href="/project.html"> Projects</a>
-                    </div>
-                    <div class="col">
-                        <a class="text-reset link-underline link-underline-opacity-0" href="/contact.html"> Contact </a>
-                    </div>
+    <div class="container d-flex justify-content-center align-items-center text-center py-5">
+        <div class="card bg-info  w-50">
+            <h1 class="card-title pt-3">SUNYSnacks</h1>
+            <div class="card-body">
+                <p class="card-text fs-5">This page provides an overview of SUNYsnacks, detailing the technologies used
+                    and
+                    including links to the GitHub repository and live site at the bottom.</p>
+                <a class="btn btn-danger fw-bold px-4 py-2" href="https://sunysnacks.onrender.com/"
+                    target="_blank">Website </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="card p-4 mx-auto" style="max-width: 60rem;">
+            <img class="card-img-top img-fluid" src="/img/mainsuny.png" alt="sunysnacks image" style="max-width: 100%; height: auto; margin: 0 auto;">
+            <h1 class="mb-3 mt-2 ms-3 card-title">Highlights</h1>
+            <p class="mb-3 ms-3 card-text">
+                SUNYsnacks is a web-based platform designed to help students discover and review campus snacks and
+                dining options. Users can explore various food items available at their university, leave ratings and reviews, and
+                browse community feedback to find the best snacks. The project features a responsive design, intuitive navigation,
+                and a dynamic review system to enhance the student dining experience. Built with FastAPI on the backend and Bootstrap with Jinja2 templates on the frontend, SUNYsnacks offers a seamless and engaging interface for food
+                enthusiasts on campus.
+            </p>
+            <h1 class="ms-3"> Tech Stack</h1>
+            <div class="d-flex justify-content-center gap-3 ms-3 mt-2 flex-wrap">
+                <button type="button" class="btn btn-primary fw-bold">Javascript</button>
+                <button type="button" class="btn btn-success fw-bold">Python</button>
+                <button type="button" class="btn orange fw-bold text-white">HTML</button>
+                <button type="button" class="btn btn-primary fw-bold">CSS</button>
+                <button type="button" class="btn btn-primary fw-bold ">Docker</button>
+                <button type="button" class="btn btn-info fw-bold text-white">SQLite</button>
+                <button type="button" class="btn purple text-white fw-bold">Bootstrap</button>
+                <button type="button" class="btn btn-dark fw-bold">Render</button>
+                <button type="button" class="btn btn-primary fw-bold ">Uv</button>
+                <button type="button" class="btn btn-success fw-bold">Github Actions</button>
+                <button type="button" class="btn btn-primary fw-bold">Github Worflows</button>
+            </div>
+            <h1 class="ms-3 mt-2">Links</h1>
+            <div class="d-flex ms-3 gap-3">
+                <a class="btn btn-dark" href="https://github.com/aston-evans/sunysnacks" target="_blank">GitHub</a>
+                <a class="btn btn-primary" href="https://sunysnacks.onrender.com/" target="_blank">Live Demo</a>
+                <a class="btn btn-secondary" href="/project.html">Back to Projects</a>
+            </div>
+        </div>
+    </div>
     
+    <!--SUNYsnacks is a web-based platform designed to help students discover and review campus snacks and dining options.
+    Users can explore various food items available at their university, leave ratings and reviews, and browse community feedback to find the best snacks. 
+    The project features a responsive design, intuitive navigation, and a dynamic review system to enhance the student dining experience.
+    Built with FastAPI on the backend and Bootstrap with Jinja2 templates on the frontend, SUNYsnacks offers a seamless and engaging interface for food 
+    enthusiasts on campus.-->
+    <footer class="bg-info text-center p-3 mt-auto primary">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/home.html"> Home</a>
                 </div>
-                <hr>
-                <div class="d-flex align-items-center justify-content-between">
-                    <p class="mx-5">©2025. Made by <a>Aston Evans</a> </p>
-                    <div class="d-flex align-items-center ms-auto me-5 ">
-                        <a href="https://github.com/aston-evans" target="_blank" class="text-reset me-3">
-                            <i class="bi bi-github fs-3"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/aston-evans-241a9334b/" target="_blank"
-                            class="text-reset me-3">
-                            <i class="bi bi-linkedin fs-3"></i>
-                        </a>
-                        <a href="mailto:findaston@gmail.com" class="text-reset">
-                            <i class="bi bi-envelope-fill fs-3"></i>
-                    </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/about.html"> About me</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/project.html"> Projects</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/contact.html"> Contact </a>
+                </div>
+
+            </div>
+            <hr>
+            <div class="d-flex align-items-center justify-content-between">
+                <p class="mx-5">©2025. Made by <a>Aston Evans</a> </p>
+                <div class="d-flex align-items-center ms-auto me-5 ">
+                    <a href="https://github.com/aston-evans" target="_blank" class="text-reset me-3">
+                        <i class="bi bi-github fs-3"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aston-evans-241a9334b/" target="_blank"
+                        class="text-reset me-3">
+                        <i class="bi bi-linkedin fs-3"></i>
+                    </a>
+                    <a href="mailto:findaston@gmail.com" class="text-reset">
+                        <i class="bi bi-envelope-fill fs-3"></i>
                 </div>
             </div>
-        </footer>
-    
-        <script src="dist/bundle.js"></script>
-    
-    </body>
-    
-    </html>
+        </div>
+    </footer>
+
+    <script src="dist/bundle.js"></script>
+
+</body>
+
+</html>
 
 
 </html>
