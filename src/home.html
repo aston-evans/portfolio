@@ -8,9 +8,9 @@
     
 </head>
 
-<body class="bg-dark">
+<body class="d-flex flex-column min-vh-100">
     <script type="module" src="/script.js"></script>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="home.html">Aston Evans</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -36,15 +36,45 @@
             </div>
         </div>
     </nav>
+
     <!-- main content-->
-    <div class="d-flex bg-white justify-content-center align-items-center mt-5">
-        <p></p>
+    <div class="container m-auto">
+        <h1></h1>
     </div>
-    <footer>
-        <div class="footer bg-light">
-            <a></a>
+    <footer class="bg-info text-center p-3 mt-auto primary">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/home.html"> Home</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/about.html"> About me</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/project.html"> Projects</a>
+                </div>
+                <div class="col">
+                    <a class="text-reset link-underline link-underline-opacity-0" href="/contact.html"> Contact </a>
+                </div>
+
+            </div>
+            <hr>
+            <div class="d-flex align-items-center justify-content-between">
+                <p class="mx-5">©2025. Made by <a>Aston Evans</a> </p>
+                <div class="d-flex align-items-center ms-auto me-5 ">
+                    <a href="https://github.com/aston-evans" target="_blank" class="text-reset me-3">
+                        <i class="bi bi-github fs-3"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aston-evans-241a9334b/" target="_blank"
+                        class="text-reset me-3">
+                        <i class="bi bi-linkedin fs-3"></i>
+                    </a>
+                    <a href="mailto:findaston@gmail.com" class="text-reset">
+                        <i class="bi bi-envelope-fill fs-3"></i>
+                </div>
+            </div>
         </div>
-        <!-- contact info, links to github/ linkedin/ email etc. -->
+
     </footer>
 
     <script src="dist/bundle.js"></script>
