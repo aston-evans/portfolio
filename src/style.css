@@ -35,3 +35,23 @@
     font-size: 1rem;
     margin-right: 0;
 }
+@keyframes bounceSide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+#animated-arrow {
+    display: inline-block;
+    animation: bounceSide 1s infinite ease-in-out;
+}
+
+.no {
+    text-decoration: none;
+}
+.hover-underline:hover {
+    text-decoration: underline;
+}
