@@ -22,22 +22,20 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/home.html", // Path to your HTML
             filename: "home.html", // Output filename in dist/
-            //chunks: ["home", "shared"]
+            
         }),
         new HtmlWebpackPlugin({
-            template: "./src/about.html", // Path to your HTML
-            filename: "about.html", // Output filename in dist/
-            //chunks: ["about", "shared"]
+            template: "./src/about.html",
+            filename: "about.html", 
         }),
         new HtmlWebpackPlugin({
-            template: "./src/contact.html", // Path to your HTML
-            filename: "contact.html", // Output filename in dist/
-            //chunks: ["contact", "shared"]
+            template: "./src/contact.html", 
+            filename: "contact.html", 
         }),
         new HtmlWebpackPlugin({
-            template: "./src/project.html", // Path to your HTML
-            filename: "project.html", // Output filename in dist/
-            //chunks: ["project", "shared"]
+            template: "./src/project.html", 
+            filename: "project.html", 
+            
         }),
         new HtmlWebpackPlugin({
             template: "./src/suny.html",
