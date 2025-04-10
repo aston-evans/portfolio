@@ -4,3 +4,5 @@ import "@popperjs/core";
 
 import "./style.css"; // Import custom styles
 import "./script.js";
+
+import "./frontend.js";
