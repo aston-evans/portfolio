@@ -31,7 +31,8 @@ app.post('/send', async (req, res) => {
     from: email,
     to: 'findaston@gmail.com',
     subject: `Message from ${name}`,
-    text: message
+    text: message, 
+    replyTo: email 
   };
 
   try {
