@@ -7,6 +7,38 @@
     --purple: #563d7c; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/*light mode */
+body{
+    background-color: #f8f9fa;
+    color: #212529;
+
+}
+
+#contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+.active {
+    font-weight: bold;
+    color: #0d6efd !important; /* accent color */
+    border-bottom: 2px solid #0d6efd; 
+  }
+
+footer {
+    background-color: #e9ecef;
+}
+
+
+/*dark mode stuff */
+
+
 
 .fonts {
     font-family: "Open Sans", sans-serif;
