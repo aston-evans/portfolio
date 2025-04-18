@@ -24,19 +24,7 @@ module.exports = {
             filename: "home.html", // Output filename in dist/
             
         }),
-        new HtmlWebpackPlugin({
-            template: "./src/about.html",
-            filename: "about.html", 
-        }),
-        new HtmlWebpackPlugin({
-            template: "./src/contact.html", 
-            filename: "contact.html", 
-        }),
-        new HtmlWebpackPlugin({
-            template: "./src/project.html", 
-            filename: "project.html", 
-            
-        }),
+        
         new HtmlWebpackPlugin({
             template: "./src/suny.html",
             filename: "suny.html"
