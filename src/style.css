@@ -4,41 +4,78 @@
 
 :root {
     --orange: #E44D26;
-    --purple: #563d7c; 
+    --purple: #563d7c;
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --accent-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --card-bg: #ffffff;
+    --form-bg: #ffffff;
+    --navbar-bg: #e9ecef;
+    --footer-bg: #ffffff;
+    --border-color: #dee2e6;
 }
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e9ecef;
+    --accent-color: #66b2ff;
+    --secondary-color: #adb5bd;
+    --card-bg: #1e1e1e;
+    --form-bg: #2c2c2c;
+    --navbar-bg: #1f1f1f;
+    --footer-bg: #1f1f1f;
+    --border-color: #343a40;
+}
+
 
 html {
     scroll-behavior: smooth;
 }
 
+nav, footer, .navbar {
+    background-color: var(--navbar-bg);
+    color: var(--text-color);
+    
+}
 
-
+a, .navbar-nav, h1 {
+    color: var(--text-color) !important;
+}
 /*light mode */
-body{
-    background-color: #f8f9fa;
-    color: #212529;
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
 
 }
 
 #contact {
     padding-top: 100px;
     padding-bottom: 100px;
-  }
+}
 
 .active {
     font-weight: bold;
-    color: #0d6efd !important; /* accent color */
-    border-bottom: 2px solid #0d6efd; 
-  }
-
-footer {
-    background-color: #e9ecef;
+    color: var(--accent-color) !important; /* #0d6efd !important;*/
+    /* accent color */
+    border-bottom: 2px solid var(--accent-color);
 }
 
 
+
 /*dark mode stuff */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
 
 
+
+/*a {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+*/
 
 .fonts {
     font-family: "Open Sans", sans-serif;
@@ -47,6 +84,7 @@ footer {
 .font-title {
     font-family: "Titillium Web", "Trebuchet MS", sans-serif;
 }
+
 .orange {
     background-color: var(--orange);
 
@@ -63,14 +101,19 @@ footer {
 .purple:hover {
     background-color: var(--purple);
 }
+
 .navbar-brand {
     font-size: 1rem;
     margin-right: 0;
 }
+
 @keyframes bounceSide {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(0);
     }
+
     50% {
         transform: translateX(10px);
     }
@@ -84,6 +127,7 @@ footer {
 .no {
     text-decoration: none;
 }
+
 .hover-underline:hover {
     text-decoration: underline;
 }
@@ -92,10 +136,11 @@ footer {
     display: none;
     width: 75%;
     text-align: center;
-    background-color: #28a745; /* Success green */
+    background-color: #28a745;
+    /* Success green */
     color: white;
     padding: 5px;
     border-radius: 5px;
     font-size: 16px;
-    
+
 }
