@@ -12,15 +12,19 @@
     <script type="module" src="/script.js"></script>
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand me-2" href="#home">Aston Evans</a>
+            <!-- Brand stays on the left -->
+            <a class="navbar-brand" href="#home">Aston Evans</a>
+
+            <!-- Hamburger button for mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!--want to move this stuff to the right and have my name and intiials as the brand on the left side. -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+            <!-- Nav items collapse for mobile -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link text-black" aria-current="page" href="#home">Home</a>
                     </li>
@@ -37,11 +41,10 @@
                         <button id="darkModeToggle" class="btn">🌙</button>
                     </li>
                 </ul>
-                
             </div>
-
         </div>
     </nav>
+    
 
     <!--home page // working on spacing of the pages -->
     <section id="home" class="min-vh-100 justify-content-center align-items-center d-flex">
@@ -59,7 +62,7 @@
                 relevant to my career path.
             </p>
             <a href="#about" class="fs-5 position-relative d-inline-block no text-reset hover-underline">
-                See more about me<span id="animated-arrow">→</span>
+                See more about me<span id="animated-arrow">↓</span>
             </a>
 
         </div>
@@ -91,7 +94,7 @@
                     Whether
                     I am optimizing a website’s performance or perfecting a jump shot, I love a good challenge.
                     Looking to connect? Click that button down below </p>
-                    <a type="button" class="btn btn-primary" href="#contact">Contact</a>
+                    <a type="button" class="btn bg fw-bold" href="#contact">Contact</a>
                 </div>
                 <div class="col">
                     <div class="container">
@@ -99,29 +102,28 @@
 
                         <div class="row row-cols-4 row-cols-sm-2 row-cols-md-3 me-3 ">
                             <div class="col col-md-auto mt-3 ">
-                                <button type="button" class="btn btn-primary fw-bold">Javascript</button>
+                                <button type="button" class="btn bg fw-bold">Javascript</button>
                                 <!--webpack npm-->
-
-                                <button type="button" class="btn btn-success fw-bold">Python</button>
+                                <!--removing all colors from buttons.-->
+                                <button type="button" class="btn bg fw-bold">Python</button>
 
                                 <!--with modern tooling, uv, ruff, mypy-->
-                                <button type="button" class="btn orange fw-bold text-white">HTML</button>
-                                <button type="button" class="btn btn-primary fw-bold">CSS</button>
+                                <button type="button" class="btn bg fw-bold">HTML</button>
+                                <button type="button" class="btn bg fw-bold">CSS</button>
                                 <!--change this color to orange-->
-                                <button type="button" class="btn btn-primary fw-bold ">Docker</button>
+                                <button type="button" class="btn bg fw-bold ">Docker</button>
 
                                 <!--github actions black-->
-                                <button type="button" class="btn btn-info fw-bold my-1 text-white">SQLite</button>
+                                <button type="button" class="btn bg fw-bold my-1 ">SQLite</button>
                                 <!--SQLite light blue, maybe cyan-->
-                                <button type="button" class="btn purple text-white fw-bold">Bootstrap</button>
+                                <button type="button" class="btn bg fw-bold">Bootstrap</button>
                                 <!--Bootstrap purple-->
-                                <button type="button" class="btn btn-dark fw-bold">Render</button><!--render black-->
-                                <button type="button"
-                                    class="btn btn-primary fw-bold my-1">Postgres</button><!--Postgres-->
-                                <!--docker blue-->
-                                <button type="button" class="btn btn-success fw-bold">Github Actions</button>
-                                <!--github black -->
-                                <button type="button" class="btn btn-primary fw-bold">Github Worflows</button>
+                                <button type="button" class="btn bg fw-bold">Render</button>
+                                <button type="button" class="btn bg fw-bold my-1">Postgres</button>
+
+                                <button type="button" class="btn bg fw-bold">Github Actions</button>
+
+                                <button type="button" class="btn bg fw-bold">Github Worflows</button>
                             </div>
                         </div>
                     </div>
@@ -142,7 +144,7 @@
         </div>
 
         <div class="container">
-            <div class="card bg-info mb-2">
+            <div class="card  mb-2">
                 <img src="/img/mainsuny.png" class="card-img-top" alt="Main Page Suny Snacks">
                 <div class="card-body">
                     <p class="card-text fw-bold my-0"> SUNYSnacks is a review style website made to allow students of
@@ -151,8 +153,8 @@
                         the eatery around campus and view others reviews.
                     </p>
                     <p class="card-text my-0 fw-bold"><small class="text-body-secondary">
-                            <a href="/suny.html" class="text-reset hover-underline d-inline-block no">See Project <span
-                                    id="animated-arrow">→</span></a></small>
+                            <a href="/suny.html" class="text hover-underline d-inline-block no">See Project <span
+                                    id="animated-side">→</span></a></small>
                     </p>
                 </div>
 
@@ -165,30 +167,29 @@
         <div class="container mt-3 d-flex-justify-content-center">
             <h1 class="text-center">Contact</h1>
             <hr class="border border-primary border-3 opacity-100 mx-auto" style="width: 50%">
-
+            <h5 class="text-center"> To get in contact with me, fill out the form below.</h5>
+            <br>
         </div>
 
-        <form class="border border-3 m-auto border-dark bg-primary p-3 " id="myForm" style="width: 30%;height: 500px;">
-            <h2 class="my-3 text-center">Contact Me!</h2>
+        <form class=" m-auto border-dark  p-3 " id="myForm" style="width: 30%;height: 500px;">
             <div class="form-group text-start ms-5">
                 <label class="d-block fs-5" for="name">Name: </label>
-                <input class="mb-3 " type="text" id="name" placeholder="Your Name" style="width: 90%;" required>
+                <input class="mb-3 second" type="text" id="name" placeholder="Your Name" style="width: 90%;" required>
             </div>
             <div class="form-group text-start ms-5">
                 <label class="d-block fs-5" for="email">Email:</label>
-                <input class="mb-3" type="email" id="email" style="width: 90%;" placeholder="exampleemail@email.com"
-                    required>
+                <input class="mb-3 second" type="email" id="email" style="width: 90%;"
+                    placeholder="exampleemail@email.com" required>
             </div>
             <div class="form-group text-start ms-5">
                 <label class="d-block fs-5" for="message">Message:
                 </label>
-                <textarea class="mb-3 me-3 " style="width: 90%;height: 150px;" id="message"></textarea>
+                <textarea class="mb-3 me-3 second" style="width: 90%;height: 150px;" id="message"></textarea>
             </div>
             <!--have to adjust the button spacing so it aligns with the text-area// works aligns fine w text-area being width 90 but want to see
             if I can get it to 80 and adjust accordingly-->
             <div class="text-center">
-                <button type="submit" class="btn btn-danger border border-1 border-dark "
-                    style="width: 70%">Submit</button>
+                <button type="submit" class="btn bg border border-1 border-dark " style="width: 70%">Submit</button>
             </div>
             <div id="alertMessage" class="message text-center justify-content-center">
                 Form submitted successfully!
