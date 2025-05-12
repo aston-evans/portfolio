@@ -11,67 +11,51 @@
 
 <body class="d-flex flex-column"><!--min-vh-100-->
     <script type="module" src="/script.js"></script>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
         <div class="container-fluid">
-            <!-- Brand stays on the left -->
-            <a class="navbar-brand" href="#home">
-                <img src="../img/AElogo.png" alt="Logo" width="30" height="30"><span ><!--change spacing on the navbar-->
-                Aston Evans</span></a>
-
-            <!-- Hamburger button for mobile -->
+            <!-- Brand -->
+            <a class="navbar-brand fs-5 fs-lg-4" href="#home">
+                <img src="../img/AElogo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <span class="ms-2">Aston Evans</span>
+            </a>
+            <!-- Hamburger menu button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Nav items collapse for mobile -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-black" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#project">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <button id="darkModeToggle" class="btn">🌙</button>
+            <!-- Collapsible nav items -->
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link px-2 px-md-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 px-md-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 px-md-3" href="#project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 px-md-3" href="#contact">Contact</a></li>
+                    <li class="nav-item"> <button id="darkModeToggle" class="btn">🌙</button>
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
 
-    <!--home page // working on spacing of the pages -->
-    <section id="home" class="min-vh-100 justify-content-center align-items-center d-flex">
-        <div class="container m-auto">
-            <h1 style="font-size: 5vw;" class="text-center"> Hi I'm Aston Evans </h1>
-            <br>
-            <p class="fs-4">I'm an aspiring web developer and UI/UX designer with a passion for building intuitive,
-                engaging
-                digital
-                experiences. With a strong foundation in full-stack development, I bring a keen eye for design and a
-                problem-solving mindset to every project. As I continue to grow, I'm eager to contribute my skills to
-                innovative teams and real-world projects.
-                In addition to my projects, I always strive to learn about the tech world and keep myself updated on
-                topics
-                relevant to my career path.
-            </p>
-            <a href="#about" class="fs-5 position-relative d-inline-block no text-reset hover-underline">
-                See more about me<span id="animated-arrow">↓</span>
-            </a>
 
+    <!--home page // working on spacing of the pages -->
+    <section id="home" class="min-vh-100 d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 display-md-3 display-lg-1 fw-bold">Hi, I’m Aston Evans</h1>
+            <p class="lead fs-5 fs-md-4 px-3 px-md-5">I’m an aspiring UX developer, looking to break into the tech
+                world.</p>
+
+            <a href="#about" class="btn btn-outline-primary btn-lg mt-3">Learn More ↓</a>
         </div>
     </section>
+
+
     <!--about me section-->
-    <section id="about" class="min-vh-100">
+    <section id="about" class="min-vh-100 ">
         <div class=" container mt-3 d-flex-justify-content-center">
             <h1 class="text-center">About Me</h1>
             <hr class="border border-primary border-3 opacity-100 mx-auto" style="width: 50%">
