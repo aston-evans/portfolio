@@ -16,7 +16,7 @@
             <!-- Brand -->
             <a class="navbar-brand fs-5 fs-lg-4" href="#home">
                 <img src="../img/AElogo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                <span class="ms-2">Aston Evans</span>
+                <span class="ms-3 d-line-block ">Aston Evans</span>
             </a>
             <!-- Hamburger menu button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -43,13 +43,15 @@
 
 
     <!--home page // working on spacing of the pages -->
-    <section id="home" class="min-vh-100 d-flex align-items-center">
+    <section id="home" class="min-vh-100 d-flex justify-content-center align-items-center">
         <div class="container text-center">
-            <h1 class="display-4 display-md-3 display-lg-1 fw-bold">Hi, I’m Aston Evans</h1>
-            <p class="lead fs-5 fs-md-4 px-3 px-md-5">I’m an aspiring UX developer, looking to break into the tech
-                world.</p>
-
-            <a href="#about" class="btn btn-outline-primary btn-lg mt-3">Learn More ↓</a>
+            <h1 class="display-2 display-md-3 display-lg-1 fw-bold">Hi, I’m Aston Evans</h1>
+            <p class=" fs-4 fs-md-4 px-3 px-md-5 ">UX Design • Full-stack Dev  • Problem Solver</p>
+            <p class=" fs-4 fs-md-4 px-3 px-md-5">I'm an aspiring UX developer with a strong passion for technology
+                and design. My goal is to create intuitive applications and websites that make every user's experience
+                smoother, smarter, and more enjoyable.</p>
+            <!--edit starting text... -->
+            <a href="#about" class="btn btn-outline-primary btn-lg mt-3">Learn More</a>
         </div>
     </section>
 
@@ -63,8 +65,8 @@
         </div>
         <!--container for info centered in the page-->
         <div class="container m-auto">
-            <div class="row">
-                <div class="col me-3">
+            <div class="row flex-column flex-lg-row">
+                <div class="col-lg-6 mb-4">
                     <h3> Get to know me</h3>
 
                     <p class="text-center text-primary fonts mt-1">
@@ -97,37 +99,25 @@
                 <div class="col">
                     <div class="container">
                         <h2>Skills</h2>
-
-                        <div class="row row-cols-4 row-cols-sm-2 row-cols-md-3 me-3 ">
-                            <div class="col col-md-auto mt-3 ">
-                                <button type="button" class="btn bg fw-bold">Javascript</button>
-                                <!--webpack npm-->
-                                <!--removing all colors from buttons.-->
-                                <button type="button" class="btn bg fw-bold">Python</button>
-
-                                <!--with modern tooling, uv, ruff, mypy-->
-                                <button type="button" class="btn bg fw-bold">HTML</button>
-                                <button type="button" class="btn bg fw-bold">CSS</button>
-                                <!--change this color to orange-->
-                                <button type="button" class="btn bg fw-bold ">Docker</button>
-
-                                <!--github actions black-->
-                                <button type="button" class="btn bg fw-bold my-1 ">SQLite</button>
-                                <!--SQLite light blue, maybe cyan-->
-                                <button type="button" class="btn bg fw-bold">Bootstrap</button>
-                                <!--Bootstrap purple-->
-                                <button type="button" class="btn bg fw-bold">Render</button>
-                                <button type="button" class="btn bg fw-bold my-1">Postgres</button>
-
-                                <button type="button" class="btn bg fw-bold">Github Actions</button>
-
-                                <button type="button" class="btn bg fw-bold">Github Worflows</button>
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-2">
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Javascript</button>
                             </div>
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Python</button></div>
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">HTML</button></div>
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">CSS</button></div>
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Docker</button></div>
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">SQLite</button></div>
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Bootstrap</button></div>
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Render</button></div>
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Postgres</button></div>
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Github Actions</button>
+                            </div>
+                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Github
+                                    Workflows</button></div>
                         </div>
                     </div>
-
-
                 </div>
+
             </div>
         </div>
     </section>
@@ -142,22 +132,20 @@
         </div>
 
         <div class="container">
-            <div class="card  mb-2">
+            <div class="card mb-3 shadow-sm">
                 <img src="/img/mainsuny.png" class="card-img-top" alt="Main Page Suny Snacks">
                 <div class="card-body">
-                    <p class="card-text fw-bold my-0"> SUNYSnacks is a review style website made to allow students of
+                    <p class="card-text fw-bold mb-1">SUNYSnacks is a review style website made to allow students of
                         SUNY
                         Oneonta leave reviews and comments on
-                        the eatery around campus and view others reviews.
-                    </p>
-                    <p class="card-text my-0 fw-bold"><small class="text-body-secondary">
-                            <a href="/suny.html" class="text hover-underline d-inline-block no">See Project <span
-                                    id="animated-side">→</span></a></small>
-                    </p>
+                        the eatery around campus and view others reviews.</p>
+                    <p class="card-text mb-0"><small>
+                            <a href="/suny.html" class="text hover-underline d-inline-block">See Project →</a>
+                        </small></p>
                 </div>
-
             </div>
         </div>
+
 
     </section>
     <!--contact form-->
@@ -169,29 +157,34 @@
             <br>
         </div>
 
-        <form class=" m-auto border-dark  p-3 " id="myForm" style="width: 30%;height: 500px;">
-            <div class="form-group text-start ms-5">
+        <form id="myForm" class="m-auto border-dark p-3" style="max-width: 600px; width: 100%;">
+
+            <div class="form-group text-start ms-5 mb-3">
                 <label class="d-block fs-5" for="name">Name: </label>
-                <input class="mb-3 second" type="text" id="name" placeholder="Your Name" style="width: 90%;" required>
+                <input class="second" type="text" id="name" placeholder="Your Name" style="width: 90%" required>
             </div>
-            <div class="form-group text-start ms-5">
+            <div class="form-group text-start ms-5 mb-3">
                 <label class="d-block fs-5" for="email">Email:</label>
-                <input class="mb-3 second" type="email" id="email" style="width: 90%;"
-                    placeholder="exampleemail@email.com" required>
+                <input class=" second" type="email" id="email" style="width: 90%;" placeholder="exampleemail@email.com"
+                    required>
             </div>
-            <div class="form-group text-start ms-5">
+            <div class="form-group text-start ms-5 mb-3">
                 <label class="d-block fs-5" for="message">Message:
                 </label>
-                <textarea class="mb-3 me-3 second" style="width: 90%;height: 150px;" id="message"></textarea>
+                <textarea class="mb-3 second" style="width: 90%;height: 150px;" id="message"></textarea>
             </div>
             <!--have to adjust the button spacing so it aligns with the text-area// works aligns fine w text-area being width 90 but want to see
             if I can get it to 80 and adjust accordingly-->
             <div class="text-center">
                 <button type="submit" class="btn bg border border-1 border-dark " style="width: 70%">Submit</button>
             </div>
-            <div id="alertMessage" class="message text-center justify-content-center">
+            <div id="alertMessage" class="alert alert-success mt-3 message mx-auto text-center">
                 Form submitted successfully!
             </div>
+
+            <!--<div id="alertMessage" class="message text-center justify-content-center">
+                Form submitted successfully!
+            </div>-->
 
         </form>
     </section>
