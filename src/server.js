@@ -1,13 +1,13 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const bodyParser = require('body-parser');  // <-- Import body-parser
+const bodyParser = require('body-parser');  
 
 const app = express();
 const PORT = 3000;
 
 app.use(cors());
-app.use(bodyParser.json());  // <-- Use body-parser to parse JSON requests
+app.use(bodyParser.json());  
 
 
 // Basic GET route for testing server status
@@ -20,10 +20,10 @@ app.post('/send', async (req, res) => {
   const { name, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    service: 'gmail', // or another provider
+    service: 'gmail', 
     auth: {
       user: 'findaston@gmail.com',
-      pass: 'eedh pwcd mybj bvdv' // use app password if 2FA is enabled
+      pass: 'eedh pwcd mybj bvdv' 
     }
   });
 
@@ -37,10 +37,10 @@ app.post('/send', async (req, res) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    console.log('Message sent successfully'); // Log success
+    console.log('Message sent successfully'); 
     res.status(200).json({ message: 'Message sent successfully' });
   } catch (error) {
-    console.error('Error sending email:', error); // Log the error details
+    console.error('Error sending email:', error); 
     res.status(500).json({ error: 'Error sending message', details: error.message });
   }
 });
