@@ -10,7 +10,7 @@
       message: document.getElementById('message').value
     };
     try {
-      const response = await fetch('http://localhost:3000/send', {
+      const response = await fetch('/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
