@@ -16,10 +16,7 @@ app.get('/', (req, res) => {
 });
 
 
-// Basic GET route for testing server status
-app.get('/', (req, res) => {
-  res.send('Server is running');
-});
+
 // Handle form submission
 
 app.post('/send', async (req, res) => {
