@@ -1,4 +1,4 @@
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'animejs/lib/anime.es.js'; // may use in the future
 
 document.getElementById("myForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevents page reload
@@ -38,28 +38,35 @@ window.addEventListener('scroll', function () {
 });
 
 
-const toggle = document.getElementById('darkModeToggle');
+
+/*
+window.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('darkModeToggle');
+  if (!toggle) return;
+
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-mode');
+    toggle.textContent = '🌙';
+  } else {
+    document.body.classList.remove('light-mode');
+    toggle.textContent = '☀️';
+  }
+
   toggle.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    if (currentTheme === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'light');
-      toggle.textContent = '🌙';
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
+    const isLightMode = document.body.classList.contains('light-mode');
+
+    if (isLightMode) {
+      document.body.classList.remove('light-mode');
+      localStorage.setItem('theme', 'dark');
       toggle.textContent = '☀️';
+    } else {
+      document.body.classList.add('light-mode');
+      localStorage.setItem('theme', 'light');
+      toggle.textContent = '🌙';
     }
   });
+});
 
-  // Optional: save preference to localStorage
-  window.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      document.documentElement.setAttribute('data-theme', savedTheme);
-      toggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
-    }
-  });
-
-  toggle.addEventListener('click', () => {
-    const newTheme = document.documentElement.getAttribute('data-theme');
-    localStorage.setItem('theme', newTheme);
-  });
+*/
