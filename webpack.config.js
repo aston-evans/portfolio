@@ -41,6 +41,7 @@ module.exports = {
         static: path.join(__dirname, "dist"), // Serve content from dist/
         compress: true,
         port: 8080, 
+        allowedHosts: 'all',
     },
     mode: "development",
 };
