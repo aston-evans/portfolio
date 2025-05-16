@@ -1,6 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+/* dark mode*/ 
 :root {
     --bg-color: #0d1b2a;
     --text-color: #e0e1dd;
@@ -15,7 +16,7 @@
     
 }
 
-/* light mode */
+/* light mode  Future feature... works for main page but does not work on project pages. 
 [data-theme="light"] {
     --bg-color: #f5f7fa;
     --text-color: #212529;
@@ -27,7 +28,7 @@
     --footer-bg: #ffffff;
     --border-color: #dee2e6;
     --cursor: url('../img/light-cursor-icon.png'), auto;
-}
+}*/
 
 section {
     scroll-margin-top: 80px; 
@@ -113,22 +114,7 @@ body {
     margin-right: 0;
 }
 
-@keyframes bounceDown {
 
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(10px);
-    }
-}
-
-#animated-arrow {
-    display: inline-block;
-    animation: bounceDown 1s infinite ease-in-out;
-}
 @keyframes bounceSide {
 
     0%,
@@ -158,7 +144,6 @@ body {
     width: 75%;
     text-align: center;
     background-color: #28a745;
-    /* Success green */
     color: white;
     padding: 5px;
     border-radius: 5px;
@@ -168,24 +153,26 @@ body {
 
 
 
-/* Width of the scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
-  /* Track (background) */
+ 
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: transparent;
   }
   
-  /* Handle */
+  
   ::-webkit-scrollbar-thumb {
-    background: #007bff; /* Primary blue */
+    background: var(--accent-color);
     border-radius: 6px;
   }
   
-  /* Handle on hover */
+  
   ::-webkit-scrollbar-thumb:hover {
-    background: #0056b3;
+    background: var(--secondary-color);
   }
   
+  .btn, .nav-link, .navbar-brand, a {
+    cursor: var(--cursor) !important ; 
+  }
