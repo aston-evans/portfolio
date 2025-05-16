@@ -4,10 +4,16 @@ const cors = require('cors');
 const bodyParser = require('body-parser');  
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
-app.use(bodyParser.json());  
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, '..', 'dist'))); // Serve frontend
+
+// Serve homepage
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'dist', 'home.html'));
+});
 
 
 // Basic GET route for testing server status
