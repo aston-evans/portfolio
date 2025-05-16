@@ -9,7 +9,7 @@
 
 </head>
 
-<body class="d-flex flex-column"><!--min-vh-100-->
+<body class="d-flex flex-column">
     <script type="module" src="/script.js"></script>
     <nav class="navbar navbar-expand-lg sticky-top py-3">
         <div class="container-fluid">
@@ -32,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link px-2 px-md-3" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link px-2 px-md-3" href="#project">Projects</a></li>
                     <li class="nav-item"><a class="nav-link px-2 px-md-3" href="#contact">Contact</a></li>
-                    <li class="nav-item"> <button id="darkModeToggle" class="btn">🌙</button>
+                    <!--<li class="nav-item"> <button id="darkModeToggle" class="btn">🌙</button>-->
                     </li>
                 </ul>
             </div>
@@ -42,89 +42,77 @@
 
 
 
-    <!--home page // working on spacing of the pages -->
+    <!--home page-->
     <section id="home" class="min-vh-100 d-flex justify-content-center align-items-center">
         <div class="container text-center">
             <h1 class="display-2 display-md-3 display-lg-1 fw-bold">Hi, I’m Aston Evans</h1>
-            <p class=" fs-4 fs-md-4 px-3 px-md-5 ">UX Design • Full-stack Dev  • Problem Solver</p>
+            <p class=" fs-4 fs-md-4 px-3 px-md-5 ">UX Design • Full-stack Dev • Problem Solver</p>
             <p class=" fs-4 fs-md-4 px-3 px-md-5">I'm an aspiring UX developer with a strong passion for technology
                 and design. My goal is to create intuitive applications and websites that make every user's experience
                 smoother, smarter, and more enjoyable.</p>
-            <!--edit starting text... -->
-            <a href="#about" class="btn btn-outline-primary btn-lg mt-3">Learn More</a>
+
+            <a href="#about" class="btn bg  btn-lg mt-3">Learn More</a>
         </div>
     </section>
 
 
     <!--about me section-->
-    <section id="about" class="min-vh-100 ">
-        <div class=" container mt-3 d-flex-justify-content-center">
-            <h1 class="text-center">About Me</h1>
+
+    <section id="about" class="min-vh-100">
+        <div class="container mt-3 text-center">
+            <h1>About Me</h1>
             <hr class="border border-primary border-3 opacity-100 mx-auto" style="width: 50%">
-
         </div>
-        <!--container for info centered in the page-->
-        <div class="container m-auto">
-            <div class="row flex-column flex-lg-row">
-                <div class="col-lg-6 mb-4">
-                    <h3> Get to know me</h3>
 
-                    <p class="text-center text-primary fonts mt-1">
-                    <h2>Hi I am Aston!</h2>
-
-                    I'm an aspiring web developer and UI/UX designer with a passion for building intuitive,
-                    engaging
-                    digital
-                    experiences. With a strong foundation in full-stack development, I bring a keen eye for design and a
-                    problem-solving mindset to every project. As I continue to grow, I'm eager to contribute my skills
-                    to
-                    innovative teams and real-world projects.
-                    In addition to my projects, I always strive to learn about the tech world and keep myself updated on
-                    topics
-                    relevant to my career path.
-                    I am a computer science graduate with a minor in math and economics. Passionate about
-                    both
-                    full-stack development and UX/UI design, I enjoy building seamless, user-friendly applications that
-                    not
-                    only function well but also provide a great experience.
-                    Check out some of my <a href="#project"
-                        class="fw-bold text-reset link-offset-1 link-underline link-underline-opacity-0 link-underline-opacity-100-hover">projects.</a>
-                    <!--fix this sentence-->
-                    Beyond coding, I am an athlete who stays active by working out and playing recreational sports.
-                    Whether
-                    I am optimizing a website’s performance or perfecting a jump shot, I love a good challenge.
-                    Looking to connect? Click that button down below </p>
+        <div class="container">
+            <div class="row">
+                <!-- Get to know me section -->
+                <div class="col-12 col-lg-6 mb-4">
+                    <h3>Get to know me!</h3>
+                    <p class="text-start fs-5">
+                        I'm a junior web developer and aspiring UX designer with a strong passion for building clean,
+                        intuitive, and accessible digital experiences. I hold a degree in Computer Science with a minor
+                        in Math and Economics, giving me a solid foundation in both the technical and analytical sides
+                        of development. While I’m still early in my career, I’m driven by curiosity and a constant
+                        desire to learn and grow.
+                        Outside of coding, I spend time reading about new tech, especially in AI and design systems, to
+                        keep my thinking fresh and my toolkit growing. Whether it’s problem-solving through code or
+                        creating smoother user flows, I’m excited to bring thoughtful, user-focused solutions to life
+                        and grow within a collaborative, innovative team.
+                        Looking to connect? Click the button below.
+                    </p>
                     <a type="button" class="btn bg fw-bold" href="#contact">Contact</a>
                 </div>
-                <div class="col">
-                    <div class="container">
-                        <h2>Skills</h2>
-                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-2">
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Javascript</button>
-                            </div>
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Python</button></div>
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">HTML</button></div>
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">CSS</button></div>
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Docker</button></div>
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">SQLite</button></div>
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Bootstrap</button></div>
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Render</button></div>
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Postgres</button></div>
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Github Actions</button>
-                            </div>
-                            <div class="col"><button type="button" class="btn bg fw-bold w-100">Github
-                                    Workflows</button></div>
-                        </div>
+
+                <!-- Skills section: stays below on small screens -->
+                <div class="col-12 col-lg-6">
+                    <h2>Skills</h2>
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-2">
+                        <div class="col"><button class="btn bg fw-bold w-100">JavaScript</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">Python</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">HTML</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">CSS</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">Docker</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">SQLite</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">Bootstrap</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">Render</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">Postgres</button></div>                       
+                        <div class="col"><button class="btn bg fw-bold w-100">Webpack</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">Npm</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">GitHub Actions</button></div>
+                        <div class="col"><button class="btn bg fw-bold w-100">GitHub Workflows</button></div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
+
     <!--project page-->
     <section id="project" class="min-vh-100">
         <!--in the future when I add more projects potentially I can make it horizontal like image left side and info right side
-        However I may like this more considering its cleaner and takes more space. -->
+        However I may like this more considering its cleaner and takes more space. // this is up for debate I could also keep it the way it is right now
+        simpler for me-->
         <div class=" container mt-3 d-flex-justify-content-center">
             <h1 class="text-center">Projects</h1>
             <hr class="border border-primary border-3 opacity-100 mx-auto" style="width: 50%">
@@ -140,7 +128,8 @@
                         Oneonta leave reviews and comments on
                         the eatery around campus and view others reviews.</p>
                     <p class="card-text mb-0"><small>
-                            <a href="/suny.html" class="text hover-underline d-inline-block">See Project →</a>
+                            <a href="/suny.html" class="text hover-underline d-inline-block">See Project <span
+                                    id="animated-side">→</span></a>
                         </small></p>
                 </div>
             </div>
@@ -173,8 +162,7 @@
                 </label>
                 <textarea class="mb-3 second" style="width: 90%;height: 150px;" id="message"></textarea>
             </div>
-            <!--have to adjust the button spacing so it aligns with the text-area// works aligns fine w text-area being width 90 but want to see
-            if I can get it to 80 and adjust accordingly-->
+
             <div class="text-center">
                 <button type="submit" class="btn bg border border-1 border-dark " style="width: 70%">Submit</button>
             </div>
@@ -182,9 +170,6 @@
                 Form submitted successfully!
             </div>
 
-            <!--<div id="alertMessage" class="message text-center justify-content-center">
-                Form submitted successfully!
-            </div>-->
 
         </form>
     </section>
@@ -227,6 +212,7 @@
         </div>
 
     </footer>
+    <script src="script.js" type="module"></script>
 
     <script src="dist/bundle.js"></script>
 </body>
