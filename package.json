@@ -7,7 +7,7 @@
     "build": "webpack",
     "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
     "start-frontend": "webpack serve --open", 
-    "start-backend": "node /home/me/dev/portfolio/src/server.js"
+    "start-backend": "node src/server.js"
    
   },
   "repository": {

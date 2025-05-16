@@ -20,8 +20,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/home.html", // Path to your HTML
-            filename: "home.html", // Output filename in dist/
+            template: "./src/index.html", // Path to your HTML
+            filename: "index.html", // Output filename in dist/
             
         }),
         
