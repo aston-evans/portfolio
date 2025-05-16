@@ -9,7 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"), // Output directory
         publicPath: "/", // Make sure to serve files from root
     },
-    watch: true, 
+    watch: process.env.NODE_ENV !== "production", //true  watch: true, good for development bad for docker, 
     module: {
         rules: [
             {
@@ -40,7 +40,7 @@ module.exports = {
     devServer: {
         static: path.join(__dirname, "dist"), // Serve content from dist/
         compress: true,
-        port: 8080, // Port for the server
+        port: 8080, 
     },
-    mode: "development", // Use "production" for production mode
+    mode: "development",
 };
