@@ -22,7 +22,7 @@ window.addEventListener('scroll', function () {
         const offsetTop = rect.top;
         const offsetBottom = rect.bottom;
 
-        // Detect section if it's mostly in view OR you're near the bottom of the page
+        // Detect contact section
         if ((offsetTop <= 120 && offsetBottom >= 120) ||
             (window.innerHeight + window.scrollY >= document.body.offsetHeight - 5 && section.id === 'contact')) {
             currentSection = section.getAttribute('id');
