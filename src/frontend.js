@@ -1,4 +1,5 @@
 
+  /* stuff for sending form. 
   const form = document.getElementById('myForm');
 
   form.addEventListener('submit', async (e) => {
@@ -27,3 +28,4 @@
       document.getElementById('alertMessage').textContent = `Failed to send message: ${error.message}`;
     }
   });
+*/

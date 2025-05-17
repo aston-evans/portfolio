@@ -138,7 +138,7 @@
 
     </section>
     <!--contact form-->
-    <section id="contact" class="mb-5" style:>
+    <section id="contact" class="mb-5" >
         <div class="container mt-3 d-flex-justify-content-center">
             <h1 class="text-center">Contact</h1>
             <hr class="border border-primary border-3 opacity-100 mx-auto" style="width: 50%">
@@ -146,29 +146,28 @@
             <br>
         </div>
 
-        <form id="myForm" class="m-auto border-dark p-3" style="max-width: 600px; width: 100%;">
+        <form class="m-auto border-dark p-3" action="https://formspree.io/f/xpwdbkkj" 
+        method="POST" style="max-width: 600px; width: 100%;">
 
             <div class="form-group text-start ms-5 mb-3">
                 <label class="d-block fs-5" for="name">Name: </label>
-                <input class="second" type="text" id="name" placeholder="Your Name" style="width: 90%" required>
+                <input class="second" type="text" id="name" name="name" placeholder="Your Name" style="width: 90%" required>
             </div>
             <div class="form-group text-start ms-5 mb-3">
                 <label class="d-block fs-5" for="email">Email:</label>
-                <input class=" second" type="email" id="email" style="width: 90%;" placeholder="exampleemail@email.com"
+                <input class="second" type="email" id="email" name="email" style="width: 90%;" placeholder="exampleemail@email.com"
                     required>
             </div>
             <div class="form-group text-start ms-5 mb-3">
                 <label class="d-block fs-5" for="message">Message:
                 </label>
-                <textarea class="mb-3 second" style="width: 90%;height: 150px;" id="message"></textarea>
+                <textarea class="mb-3 second" name="message" style="width: 90%;" rows="5" id="message"></textarea>
             </div>
 
             <div class="text-center">
                 <button type="submit" class="btn bg border border-1 border-dark " style="width: 70%">Submit</button>
             </div>
-            <div id="alertMessage" class="alert alert-success mt-3 message mx-auto text-center">
-                Form submitted successfully!
-            </div>
+           
 
 
         </form>
