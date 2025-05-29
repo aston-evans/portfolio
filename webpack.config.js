@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-    entry: "./src/import.js", // Entry point for your JavaScript
+    entry: "./src/js/import.js", // Entry point for your JavaScript
     output: {
         filename: "bundle.js", // Output bundled file
         path: path.resolve(__dirname, "dist"), // Output directory
@@ -20,7 +20,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/index.html", // Path to your HTML
+            template: "./src/pages/index.html", // Path to your HTML
             filename: "index.html", // Output filename in dist/
             
         }),

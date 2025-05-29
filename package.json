@@ -5,10 +5,7 @@
   "main": "script.js",
   "scripts": {
     "build": "webpack",
-    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
-    "start-frontend": "webpack serve --open", 
-    "start-backend": "node src/server.js"
-   
+    "start": "webpack serve --open"   
   },
   "repository": {
     "type": "git",
