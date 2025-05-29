@@ -176,3 +176,19 @@ body {
   .btn, .nav-link, .navbar-brand, a {
     cursor: var(--cursor) !important ; 
   }
+
+  .contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    z-index: 1055;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
