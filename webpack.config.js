@@ -38,10 +38,18 @@ module.exports = {
         
     ],
     devServer: {
-        static: path.join(__dirname, "dist"), // Serve content from dist/
+        static: path.join(__dirname, "dist"),
         compress: true,
-        port: 8080, 
+        port: 8080,
         allowedHosts: 'all',
-    },
+        proxy: [
+          {
+            context: ["/send"],
+            target: "http://localhost:3000",
+            changeOrigin: true,
+            secure: false,
+          },
+        ],
+      },  
     mode: "development",
 };
