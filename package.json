@@ -6,9 +6,8 @@
   "scripts": {
     "build": "webpack",
     "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
-    "start-frontend": "webpack serve --open", 
+    "start-frontend": "webpack serve --open",
     "start-backend": "node src/server.js"
-   
   },
   "repository": {
     "type": "git",
@@ -28,6 +27,7 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "nodemailer": "^6.10.0"
   },
