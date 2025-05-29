@@ -192,3 +192,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
   
+  button:hover {
+    cursor: var(--cursor) !important;
+  }
